@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import {
 	FaFileSignature,
-	FaGitlab,
+	FaGitHub,
 	FaHouse,
 	FaMoon,
 	FaSun,
@@ -64,10 +64,10 @@ export default function Header() {
 					<HStack>
 						<IconButton variant="ghost" asChild>
 							<NextLink
-								href="https://gitlab.com/KiRura/kirura-website-chakra-v3"
+								href="https://github.com/317moris/website"
 								target="_blank"
 							>
-								<FaGitlab />
+								<FaGitHub />
 							</NextLink>
 						</IconButton>
 						<IconButton onClick={toggleColorMode} variant="ghost">
