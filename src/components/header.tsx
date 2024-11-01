@@ -15,7 +15,7 @@ import { useColorMode } from "./ui/color-mode";
 
 const pages = [
 	{
-		name: "KiRura",
+		name: "Home",
 		href: "/",
 		icon: FaHouse,
 	},
