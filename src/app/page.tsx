@@ -35,8 +35,8 @@ export default function Home() {
 						moris,
 					</Highlight>
 				</Heading>
-{/* 			</Center>
-			<VStack gap={4} mb={6}>
+ 			</Center>
+{/*			<VStack gap={4} mb={6}>
 				<Heading>Discord鯖</Heading>
 				<Grid
 					templateColumns={{
@@ -75,7 +75,7 @@ export default function Home() {
 				<DataListRoot hideFrom="md">
 					<IntroSm />
 				</DataListRoot>
-			</VStack>
-		</Container> */}
+			</VStack> */}
+		</Container>
 	);
 }
