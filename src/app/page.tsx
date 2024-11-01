@@ -29,13 +29,13 @@ export default function Home() {
 					Hello!,
 					<br />
 					<Highlight
-						query={["きるら", "(7)KiRura"]}
+						query={"moris"}
 						styles={{ color: "orange.300" }}
 					>
-						きるら, (7)KiRura,
+						moris,
 					</Highlight>
 				</Heading>
-			</Center>
+{/* 			</Center>
 			<VStack gap={4} mb={6}>
 				<Heading>Discord鯖</Heading>
 				<Grid
@@ -64,8 +64,8 @@ export default function Home() {
 				>
 					<Accounts />
 				</Grid>
-			</VStack>
-			<VStack gap={4} mb={6}>
+			</VStack> */}
+{/* 			<VStack gap={4} mb={6}>
 				<Heading>自己紹介</Heading>
 				<Table.Root w="fit" hideBelow="md">
 					<Table.Body>
@@ -76,6 +76,6 @@ export default function Home() {
 					<IntroSm />
 				</DataListRoot>
 			</VStack>
-		</Container>
+		</Container> */}
 	);
 }
