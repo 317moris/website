@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import {
 	FaFileSignature,
-	FaGitHub,
+	FaGithub,
 	FaHouse,
 	FaMoon,
 	FaSun,
@@ -67,7 +67,7 @@ export default function Header() {
 								href="https://github.com/317moris/website"
 								target="_blank"
 							>
-								<FaGitHub />
+								<FaGithub />
 							</NextLink>
 						</IconButton>
 						<IconButton onClick={toggleColorMode} variant="ghost">
