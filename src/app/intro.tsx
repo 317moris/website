@@ -9,63 +9,8 @@ import {
 import NextLink from "next/link";
 import type React from "react";
 import type { IconType } from "react-icons";
-import {
-	FaFlask,
-	FaPerson,
-	FaThumbsDown,
-	FaThumbsUp,
-	FaWrench,
-} from "react-icons/fa6";
+import { FaFlask, FaPerson, FaWrench } from "react-icons/fa6";
 import { RxDividerVertical } from "react-icons/rx";
-
-const likes = [
-	{
-		name: "ドゥームフィスト",
-		href: "https://overwatch.blizzard.com/heroes/doomfist",
-	},
-	{
-		name: "ラマットラ",
-		href: "https://overwatch.blizzard.com/heroes/ramattra",
-	},
-	{
-		name: "バスティオン",
-		href: "https://overwatch.blizzard.com/heroes/bastion",
-	},
-	{
-		name: "miHoYoの大部分",
-	},
-	{
-		name: "タルレミ・エラ",
-		href: "https://lit.link/tallemiella",
-	},
-];
-
-const disLikes = [
-	{
-		name: "今の高校",
-	},
-	{
-		name: "Google",
-	},
-	{
-		name: "Apple",
-	},
-	{
-		name: "Microsoft",
-	},
-	{
-		name: "Discord",
-	},
-	{
-		name: "アビス",
-	},
-	{
-		name: "ブリーズ",
-	},
-	{
-		name: "miHoYoの一部",
-	},
-];
 
 const langs = [
 	{
@@ -97,18 +42,6 @@ const things = [
 ];
 
 const intros: Intros[] = [
-	{
-		title: "好き",
-		description: <TextsToLinks likesArray={likes} />,
-		icon: FaThumbsUp,
-		colSpan: { sm: 2, md: 1, lg: 2 },
-	},
-	{
-		title: "嫌い",
-		description: <TextsToLinks likesArray={disLikes} />,
-		icon: FaThumbsDown,
-		colSpan: { sm: 2, md: 1, lg: 2 },
-	},
 	{
 		title: "年齢",
 		description: "16歳 / 高2",

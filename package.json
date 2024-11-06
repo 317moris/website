@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "bun run dep:gen && bun run lint && next build",
 		"start": "next start",
-		"lint": "bunx biome check --unsafe --write .",
+		"lint": "biome check --unsafe --write .",
 		"dep:gen": "license-report --only=prod --output=json > src/app/license/licenses.json"
 	},
 	"dependencies": {

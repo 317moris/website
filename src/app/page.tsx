@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import Accounts from "./accounts";
 import { Intro, IntroSm } from "./intro";
-import Servers from "./servers";
 
 export default function Home() {
 	return (
@@ -28,15 +27,12 @@ export default function Home() {
 				>
 					Hello!,
 					<br />
-					<Highlight
-						query={"moris"}
-						styles={{ color: "orange.300" }}
-					>
+					<Highlight query={"moris"} styles={{ color: "orange.300" }}>
 						moris,
 					</Highlight>
 				</Heading>
- 			</Center>
-{/*			<VStack gap={4} mb={6}>
+			</Center>
+			{/* <VStack gap={4} mb={6}>
 				<Heading>Discord鯖</Heading>
 				<Grid
 					templateColumns={{
@@ -49,7 +45,7 @@ export default function Home() {
 				>
 					<Servers />
 				</Grid>
-			</VStack>
+			</VStack> */}
 			<VStack gap={4} mb={6}>
 				<Heading>他リンク</Heading>
 				<Grid
@@ -64,8 +60,8 @@ export default function Home() {
 				>
 					<Accounts />
 				</Grid>
-			</VStack> */}
-{/* 			<VStack gap={4} mb={6}>
+			</VStack>
+			<VStack gap={4} mb={6}>
 				<Heading>自己紹介</Heading>
 				<Table.Root w="fit" hideBelow="md">
 					<Table.Body>
@@ -75,7 +71,7 @@ export default function Home() {
 				<DataListRoot hideFrom="md">
 					<IntroSm />
 				</DataListRoot>
-			</VStack> */}
+			</VStack>
 		</Container>
 	);
 }

@@ -13,129 +13,24 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useState } from "react";
-import {
-	FaBluesky,
-	FaBolt,
-	FaCloudMoon,
-	FaDiscord,
-	FaFire,
-	FaGithub,
-	FaGitlab,
-	FaInfo,
-	FaInstagram,
-	FaRobot,
-	FaStopwatch,
-	FaTrain,
-	FaTrash,
-	FaTwitter,
-	FaWind,
-	FaYoutube,
-} from "react-icons/fa6";
+import type { IconType } from "react-icons";
+import { FaInfo, FaSchool } from "react-icons/fa6";
 
-const accounts = [
+type Accounts = {
+	accountId: string;
+	name: string;
+	icon: IconType;
+	href: string;
+	description: string;
+};
+
+const accounts: Accounts[] = [
 	{
-		accountId: "@7KiRura",
-		name: "YouTube",
-		description: "思い付いたものをポンポン上げる",
-		href: "https://www.youtube.com/channel/UCmPBPQzdqk3LhvxpadSdzDA",
-		icon: FaYoutube,
-	},
-	{
-		accountId: "@7KiRura",
-		name: "Twitter",
-		description: "ただ思ったことを言い続ける",
-		href: "https://twitter.com/7KiRura",
-		icon: FaTwitter,
-	},
-	{
-		accountId: "KiRura",
-		name: "GitLab",
-		description: "GitHubから移転した",
-		href: "https://gitlab.com/KiRura",
-		icon: FaGitlab,
-	},
-	{
-		accountId: "KiRura",
-		name: "GitHub",
-		description: "負債の塊",
-		href: "https://github.com/KiRura",
-		icon: FaGithub,
-	},
-	{
-		accountId: "@7kirura.bsky.social",
-		name: "Bluesky",
-		description: "一応",
-		href: "https://bsky.app/profile/7kirura.bsky.social",
-		icon: FaBluesky,
-	},
-	{
-		accountId: "@7kirura",
-		name: "Instagram",
-		description: "rom専 たまに飯テロ",
-		href: "https://www.instagram.com/7kirura",
-		icon: FaInstagram,
-	},
-	{
-		accountId: "7kirura",
-		name: "Discord",
-		description: "いつもここにいる",
-		href: "https://discord.com/users/606093171151208448",
-		icon: FaDiscord,
-	},
-	{
-		accountId: "bHYG5cF09HUKHN7C",
-		name: "Refind Self",
-		description: "全人類やれ",
-		href: "https://store.steampowered.com/app/2514960/Refind_Self",
-		icon: FaRobot,
-	},
-	{
-		accountId: "俺のオーディン#KiR",
-		name: "VALORANT",
-		description: "基本マルチ",
-		href: "https://playvalorant.com",
-		icon: FaWind,
-	},
-	{
-		accountId: "KiRura#1579",
-		name: "Overwatch",
-		description: "ゲンボを一番やってる",
-		href: "https://overwatch.blizzard.com/",
-		icon: FaStopwatch,
-	},
-	{
-		accountId: "1301188343",
-		name: "ZZZ",
-		description: "全人類やれ",
-		href: "https://zenless.hoyoverse.com/",
-		icon: FaBolt,
-	},
-	{
-		accountId: "803854671",
-		name: "原神",
-		description: "フォンテーヌまでやれ",
-		href: "https://genshin.hoyoverse.com/",
-		icon: FaCloudMoon,
-	},
-	{
-		accountId: "802728892",
-		name: "スタレ",
-		description: "ピノコニーまでやれ",
-		href: "https://hsr.hoyoverse.com/",
-		icon: FaTrain,
-	},
-	{
-		accountId: "21132502",
-		name: "崩壊3rd",
-		description: "Steam版とデータが上手く連携できてない",
-		href: "https://www.houkai3rd.com/",
-		icon: FaFire,
-	},
-	{
-		accountId: "きるら",
-		name: "apex legends",
-		description: "カス",
-		icon: FaTrash,
+		accountId: "2436",
+		name: "越谷総合技術高校",
+		description: "越谷にある高校",
+		icon: FaSchool,
+		href: "https://ksg-h.spec.ed.jp",
 	},
 ];
 

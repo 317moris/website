@@ -7,16 +7,16 @@ import type React from "react";
 import "./global.css";
 
 export const metadata: Metadata = {
-	title: "きるら",
-	description: "しがない個人サイト with Chakra UI v3",
-	icons: "https://kirura.vercel.app/kirura_rounded.png",
-	twitter: {
-		card: "summary",
-		images: "https://kirura.vercel.app/kirura.png",
-	},
-	openGraph: {
-		images: "https://kirura.vercel.app/kirura.png",
-	},
+	title: "317moris",
+	description: "しがないサイト with Chakra UI v3",
+	// 	icons: "https://kirura.vercel.app/kirura_rounded.png",
+	// 	twitter: {
+	// 		card: "summary",
+	// 		images: "https://kirura.vercel.app/kirura.png",
+	// 	},
+	// 	openGraph: {
+	// 		images: "https://kirura.vercel.app/kirura.png",
+	// 	},
 };
 
 const interJp = localFont({
